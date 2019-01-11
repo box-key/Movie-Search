@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" 
+prefWidth="600.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="admin.DeleteMovieControl">
+   <children>
+      <Label alignment="CENTER" contentDisplay="TOP" layoutX="193.0" layoutY="14.0" prefHeight="36.0" prefWidth="233.0" text="Delete Movie">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="93.0" layoutY="153.0" prefHeight="36.0" prefWidth="141.0" text="Movie Title:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cb" layoutX="300.0" layoutY="153.0" prefHeight="36.0" prefWidth="180.0" />
+      <Button fx:id="delete" layoutX="152.0" layoutY="295.0" mnemonicParsing="false" onMouseClicked="#delete" prefHeight="36.0" prefWidth="315.0" text="Delete" />
+   </children>
+</Pane>

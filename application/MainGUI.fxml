@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" 
+prefHeight="500.0" prefWidth="600.0"
+xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="application.MainGUIControl">
+   <children>
+      <Button fx:id="movie" layoutX="82.0" layoutY="331.0" mnemonicParsing="false" onMouseClicked="#showMovies" prefHeight="77.0" prefWidth="194.0" text="Movies" />
+      <Button fx:id="cinema" layoutX="328.0" layoutY="331.0" mnemonicParsing="false" onMouseClicked="#showCinemas" prefHeight="77.0" prefWidth="194.0" text="Cimenas" />
+      <PasswordField fx:id="password" layoutX="406.0" layoutY="172.0" prefHeight="38.0" prefWidth="149.0" />
+      <Label layoutX="300.0" layoutY="176.0" text="Password:">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Button fx:id="admin" layoutX="82.0" layoutY="148.0" mnemonicParsing="false" onMouseClicked="#showAdmin" prefHeight="77.0" prefWidth="194.0" text="Admin" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="171.0" layoutY="26.0" prefHeight="69.0" prefWidth="264.0" text="Welcome User!" textAlignment="CENTER">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

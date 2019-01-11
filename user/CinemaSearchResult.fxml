@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+ prefHeight="600.0" prefWidth="850.0" 
+xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="user.CinemaSearchResultControl">
+   <children>
+      <Pane layoutX="18.0" layoutY="14.0" prefHeight="238.0" prefWidth="815.0">
+         <children>
+            <Label layoutX="19.0" layoutY="63.0" prefHeight="21.0" prefWidth="94.0" text="X coordinate:" />
+            <Button fx:id="search" layoutX="151.0" layoutY="158.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="164.0" text="Search" />
+            <TextField layoutX="114.0" layoutY="61.0" prefHeight="25.0" prefWidth="164.0" fx:id="x" />
+            <Label layoutX="345.0" layoutY="63.0" prefHeight="21.0" prefWidth="94.0" text="Y coordinate:" />
+            <TextField fx:id="y" layoutX="447.0" layoutY="61.0" prefHeight="25.0" prefWidth="180.0" />
+            <CheckBox fx:id="g" layoutX="330.0" layoutY="108.0" mnemonicParsing="false" text="G" />
+            <CheckBox fx:id="pg" layoutX="384.0" layoutY="108.0" mnemonicParsing="false" text="PG" />
+            <CheckBox fx:id="pg13" layoutX="447.0" layoutY="108.0" mnemonicParsing="false" text="PG13" />
+            <CheckBox fx:id="r" layoutX="519.0" layoutY="108.0" mnemonicParsing="false" text="R" />
+            <CheckBox fx:id="nc17" layoutX="576.0" layoutY="109.0" mnemonicParsing="false" text="NC17" />
+            <CheckBox fx:id="selectAll" layoutX="664.0" layoutY="108.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="118.0" text="Select All" />
+            <Label layoutX="31.0" layoutY="106.0" prefHeight="21.0" prefWidth="55.0" text="Radius:" />
+            <TextField fx:id="radius" layoutX="113.0" layoutY="101.0" prefHeight="31.0" prefWidth="164.0" />
+            <Button fx:id="back" layoutX="441.0" layoutY="158.0" mnemonicParsing="false" onMouseClicked="#goToHome" prefHeight="49.0" prefWidth="164.0" text="Back" />
+            <Label layoutX="641.0" layoutY="63.0" prefHeight="21.0" prefWidth="164.0" text="(0 &lt;= x, y &lt;= 100)" />
+            <Label alignment="CENTER" layoutX="320.0" layoutY="14.0" prefHeight="31.0" prefWidth="164.0" text="Cinemas" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+<Pane layoutX="8.0" layoutY="249.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="348.0" prefWidth="833.0">
+   <children>
+      <Label layoutX="261.0" layoutY="86.0" prefHeight="304.0" prefWidth="0.0" />
+        <ScrollPane layoutX="14.0" layoutY="10.0" prefHeight="331.0" prefWidth="270.0">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="47.0" prefWidth="100.0">
+                     <children>
+                        <TableView fx:id="cinemaTable" prefHeight="331.0" prefWidth="270.0">
+                           <columns>
+                              <TableColumn fx:id="cinema" prefWidth="137.0" text="Cinema" />
+                              <TableColumn fx:id="address" prefWidth="132.0" text="Address" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+      </ScrollPane>
+      <ScrollPane layoutX="293.0" layoutY="10.0" prefHeight="331.0" prefWidth="526.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="47.0" prefWidth="100.0">
+               <children>
+                  <TableView fx:id="movieTable" layoutX="-2.0" prefHeight="331.0" prefWidth="526.0">
+                    <columns>
+                      <TableColumn fx:id="movieTitle" prefWidth="139.0" text="Title" />
+                      <TableColumn fx:id="movieRating" prefWidth="66.0" text="Rating" />
+                      <TableColumn fx:id="matinee" text="Matinee" />
+                      <TableColumn fx:id="afternoon" text="Afternoon" />
+                      <TableColumn fx:id="evening" text="Evening" />
+                      <TableColumn fx:id="midnight" text="Midnight" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </children>
+</Pane>
+   </children>
+</Pane>
