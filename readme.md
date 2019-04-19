@@ -21,7 +21,7 @@ First, you add movie information into the database. Then, you can see the inform
 
 ## Important Notice
 
-Since I turn off the database usually, you have to contact me if you want to use this application.
+Since I turn off the database usually, you have to contact me if you want to run this application.
 
 ## Contact
 
