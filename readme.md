@@ -4,11 +4,12 @@ Name: Kei Nemoto
 
 ## How to run it?
 
-Important :  project4.zip and mysql-connector-java-8.0.12.jar must be in same folder
+1) Install LaunchApp.zip 
+2) Make sure you have JDBC connector under the same directory
+https://dev.mysql.com/downloads/connector/j/
+3) Open the terminal, type the following command:
+java -jar project4.zip
 
-then in the command line, use following instruction to run the program
-
-					java -jar project4.zip
 
 
 ## How to run it?
