@@ -18,3 +18,8 @@ This application consists of three parts:
 3) Cinema - where you can search for cinema by its location and rating.
 
 First, you add movie information into the database. Then, you can see the information on Movie and Cinema screen.
+
+## Important
+
+Since I turn off the database usually, you have to contact me if you want to use this application.
+Contact: kei.nemoto@qc.cuny.edu
