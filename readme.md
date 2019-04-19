@@ -19,7 +19,10 @@ This application consists of three parts:
 
 First, you add movie information into the database. Then, you can see the information on Movie and Cinema screen.
 
-## Important
+## Important Notice
 
 Since I turn off the database usually, you have to contact me if you want to use this application.
-Contact: kei.nemoto@qc.cuny.edu
+
+## Contact
+
+kei.nemoto@qc.cuny.edu
