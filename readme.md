@@ -8,7 +8,7 @@
 1) Install LaunchApp.zip 
 2) Make sure you have JDBC connector under the same directory
 3) Open the terminal, type the following command:
-java -jar project4.zip
+java -jar LaunchApp.zip
 
 ## Usage
 
